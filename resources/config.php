@@ -23,7 +23,8 @@ defined("DB_PASS") ? null : define("DB_PASS", "");
 
 defined("DB_NAME") ? null : define("DB_NAME", "ecom_db");
 
-$connection = msession_connect(DB_HOST, DB_USER, DB_PASS, DB_NAME);
+// creating variable that holds connection details
+$connection = mysqli_connect(DB_HOST, DB_USER, DB_PASS, DB_NAME);
 
-require_once*+("functions.php")
+require_once("functions.php");
 ?>
