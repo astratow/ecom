@@ -1,16 +1,20 @@
 <?php require_once("../resources/config.php"); ?>
 <?php include(TEMPLATE_FRONT . DS . "header.php"); ?>
 
-    <!-- Page Content -->
+<!-- Page Content -->
     <div class="container">
 
         <div class="row">
 
-           <!-- side nav categories here -->
+<!-- side nav categories here -->
 
-<?php include(TEMPLATE_FRONT . DS . "side_nav.php"); ?>           
+<?php include(TEMPLATE_FRONT . DS . "side_nav.php"); ?>  
+
 <!-- carousel here -->
+
 <?php include(TEMPLATE_FRONT . DS . "carousel.php"); ?>  
+
+
                 <div class="row">
 
                     <div class="col-sm-4 col-lg-4 col-md-4">
