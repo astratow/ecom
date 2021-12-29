@@ -1,17 +1,16 @@
 <?php
 
 
-ob_start();/* allows to send multiple requests*/
+ob_start();/* output buffering allows to send multiple requests*/
 
 session_start();
 
 /*below defines directory separator depending on OS*/
 defined("DS") ? null : define("DS", DIRECTORY_SEPARATOR);
 
-defined("TEMPLATE_FRONT") ? null : define("TEMPLATE_FRONT", __DIR__ . DS . "templates/front");
+defined("TEMPLATE_FRONT") ? null : define("TEMPLATE_FRONT", __DIR__ . DS . "templates" . DS . "front");
 
-defined("TEMPLATE_BACK") ? null : define("TEMPLATE_BACK", __DIR__ . DS . "templates/back");
-
+defined("TEMPLATE_FRONT") ? null : define("TEMPLATE_BACK", __DIR__ . DS . "templates" . DS . "back");
 
 
 defined("DB_HOST") ? null : define("DB_HOST","localhost");
