@@ -9,14 +9,25 @@ function redirect($location){
 function query($sql){
 	global $connection;
 
-	if(!$result){
+	// if(!$result){
 
-		die("QUERY FAILED" . mysqli_error($connection));
+	// 	die("QUERY FAILED " . mysqli_error($connection));
 			
-	}
+	// }
+
+	return mysqli_query($connection, $sql);
 
 }
 
+function confirm($result){
+	global $connection;
+
+	if(!$result){
+
+		die("QUERY FAILED " . mysqli_error($connection));
+			
+	}	
+}
 function escape_string($string){
 
 	global $connection;
@@ -35,7 +46,13 @@ function fetch_array($result){
 
 function get_products(){
 
-	query("SELECT * FROM products");
-	
+	$query = query("SELECT * FROM products");
+	confirm($query);
+
+	while($row = fetch_array($query)){
+		echo $row['product_price'];
+
+	}
+
 }
 ?>

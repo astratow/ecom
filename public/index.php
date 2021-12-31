@@ -38,7 +38,9 @@
                             </div>
                         </div>
                     </div>
-
+<?php
+ get_products();
+?>
 
                     <div class="col-sm-4 col-lg-4 col-md-4">
                         <h4><a href="#">Like this template?</a>
