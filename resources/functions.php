@@ -1,5 +1,7 @@
 <?php
 
+// helper functions
+
 function redirect($location){
 	header("Location: $location ");
 }
@@ -27,5 +29,13 @@ function fetch_array($result){
 
 	return mysqli_fetch_array($result);
 
+}
+
+// get products
+
+function get_products(){
+
+	query("SELECT * FROM products");
+	
 }
 ?>
