@@ -17,3 +17,9 @@ Long time not seen... I came across funny error when it came to load file via in
  created resources/templates/front/top_nav.php
 
  created mysql database and basic table, which was then connected via PHP request to the website. Get in there!
+
+ ## 31.12.2021
+
+ Last day of the year... Managed to add something to the function, which should not be there. When I tried to work out what is wrong, it took me forever and nothing... Finally I found some source code that I compared and discovered the issue.
+
+ I must admit, my code is a lot more accurate than last year. My writting is more smooth.
